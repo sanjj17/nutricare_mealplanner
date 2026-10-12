@@ -1,0 +1,21 @@
+{
+  "name": "nutricare-server",
+  "version": "1.1.0",
+  "private": true,
+  "description": "NutriCare API server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node --check server.js && node --check routes/auth.routes.js && node --check routes/user.routes.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.1",
+    "sequelize": "^6.37.7"
+  }
+}
